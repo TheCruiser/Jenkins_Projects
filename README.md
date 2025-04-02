@@ -87,16 +87,16 @@ Install the Docker Pipeline plugin in Jenkins:
 
 Wait for the Jenkins to be restarted.
 
-### Docker Slave Configuration
+## Docker Slave Configuration
 
-Run the below command to Install Docker
+### Run the below command to Install Docker
 
 ```
 sudo apt update
 sudo apt install docker.io
 ```
 
-Grant Jenkins user and Ubuntu user permission to docker deamon.
+### Grant Jenkins user and Ubuntu user permission to docker deamon.
 
 ```
 sudo su - 
@@ -105,7 +105,7 @@ usermod -aG docker ubuntu
 systemctl restart docker
 ```
 
-Once you are done with the above steps, it is better to restart Jenkins.
+### Once you are done with the above steps, it is better to restart Jenkins.
 
 ```
 http://<ec2-instance-public-ip>:8080/restart
