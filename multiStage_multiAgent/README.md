@@ -1,0 +1,2 @@
+Setting up a multistage jenkins pipeline where each stage runs on an unique agent.
+>>> This is a very useful approach when you have multi language application or application having conflicting dependencies
