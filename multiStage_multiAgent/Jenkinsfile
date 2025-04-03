@@ -21,5 +21,15 @@ pipeline{
                 sh 'node --version'
             }
         }
+        stage('DB') {
+            agent {
+                docker{
+                    image 'mysql:latest'
+                }
+            }
+            steps {
+                sh 'SELECT * FROM ALL_USERS;'
+            }
+        }
     }
 }
